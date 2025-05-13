@@ -36,7 +36,7 @@
           <tr
             v-for="photo in visiblePhotos"
             :key="photo.id"
-            class="hover:bg-gray-100 dark:hover:bg-gray-700 border-b"
+            class="hover:bg-gray-100 dark:hover:bg-gray-700 border-b [&>td]:truncate [&>td]:max-w-[150px] [&>td]:h-10 last:border-0 even:bg-gray-50 dark:even:bg-gray-800"
           >
             <td class="truncate px-2 py-1" :title="photo.id">{{ photo.id }}</td>
             <td class="truncate px-2 py-1" :title="photo.albumId">{{ photo.albumId }}</td>
